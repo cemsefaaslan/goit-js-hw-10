@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2 — Promise Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/02-snackbar.css" />
+  </head>
+  <body>
+    <a href="./index.html" class="back-link">← Back</a>
+
+    <div class="wrapper">
+      <div class="heading">
+        <div class="heading__tag">Module 10 · Task 2</div>
+        <h1 class="heading__title">Promise<br /><em>Generator</em></h1>
+      </div>
+
+      <div class="card">
+        <form class="form">
+          <label class="form__label">
+            Delay (ms)
+            <input type="number" name="delay" required />
+          </label>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">State</legend>
+            <div class="radio-options">
+              <label class="radio-option">
+                <input type="radio" name="state" value="fulfilled" required />
+                <span class="radio-label">✅ Fulfilled</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="state" value="rejected" />
+                <span class="radio-label">❌ Rejected</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <button type="submit">⚡ Create notification</button>
+        </form>
+      </div>
+
+      <div class="pending-list" id="pending-list"></div>
+    </div>
+
+    <script type="module" src="./js/02-snackbar.js"></script>
+  </body>
+</html>

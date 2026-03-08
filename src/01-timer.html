@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1 — Countdown Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/01-timer.css" />
+  </head>
+  <body>
+    <a href="./index.html" class="back-link">← Back</a>
+
+    <div class="wrapper">
+      <div class="heading">
+        <h1 class="heading__title">COUNT<span>DOWN</span></h1>
+        <p class="heading__sub">Select a future date &amp; start the timer</p>
+      </div>
+
+      <div class="controls">
+        <div class="input-wrap">
+          <label for="datetime-picker">Target Date &amp; Time</label>
+          <input
+            type="text"
+            id="datetime-picker"
+            placeholder="Pick a date..."
+            readonly
+          />
+        </div>
+        <button type="button" data-start disabled>Start</button>
+      </div>
+
+      <div class="timer">
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/01-timer.js"></script>
+  </body>
+</html>
